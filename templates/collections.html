@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Collections · RAG Research Explorer{% endblock %}
+{% block content %}
+<div class="collections-page">
+  <h1>Reading Collections</h1>
+  <p class="subtitle">Organize papers into collections for later comparison and synthesis.</p>
+
+  <form class="collection-form" id="create-collection">
+    <input type="text" name="name" placeholder="Collection name" required>
+    <input type="text" name="description" placeholder="Description (optional)">
+    <button type="submit" class="secondary">Create</button>
+  </form>
+  <p id="collection-message" class="small note" aria-live="polite"></p>
+
+  <ul class="collection-list">
+    {% for collection in collections %}
+    <li>
+      <a href="{{ url_for('pages.collection_detail', collection_id=collection.id) }}">
+        <strong>{{ collection.name }}</strong>
+        <span class="small">{{ collection.paper_count }} papers · {{ collection.description or 'no description' }}{% if collection.last_added_at %} · last added {{ collection.last_added_at[:10] }}{% endif %}</span>
+      </a>
+    </li>
+    {% else %}
+    <li class="small">No collections yet.</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

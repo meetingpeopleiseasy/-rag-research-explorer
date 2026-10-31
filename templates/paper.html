@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}{{ paper.title or 'Paper' }} · RAG Research Explorer{% endblock %}
+{% block content %}
+<article class="paper-detail">
+  <a class="back" href="{{ url_for('pages.index') }}">← Back to search</a>
+  <h1>{{ paper.title or '(untitled)' }}</h1>
+  <div class="paper-actions">
+    <button class="primary quick-save" data-paper-id="{{ paper.paper_id }}">Quick Save</button>
+    <a class="secondary" href="{{ url_for('pages.explore', paper_id=paper.paper_id) }}">Explore from this paper</a>
+    <a class="secondary" href="{{ url_for('pages.research_map', paper_id=paper.paper_id) }}">Research Map</a>
+    <select class="collection-select" data-collection-select></select>
+    <button class="secondary add-to-collection" data-paper-id="{{ paper.paper_id }}">Add to collection</button>
+    {% if saved %}<span class="tag">Saved</span>{% endif %}
+  </div>
+
+  <div class="detail-meta">
+    {% if paper.authors %}<p><strong>Authors</strong> {{ paper.authors|join('; ') }}</p>{% endif %}
+    <p><strong>Year</strong> {{ paper.year or 'n/a' }} · <strong>Venue</strong> {{ paper.venue or 'unknown' }}</p>
+    {% if paper.doi %}<p><strong>DOI</strong> <a href="{{ paper.doi }}">{{ paper.doi }}</a></p>{% endif %}
+    <p><strong>OpenAlex ID</strong> {{ paper.paper_id }}</p>
+    {% if paper.cited_by_count is not none %}<p><strong>Citations</strong> {{ paper.cited_by_count }}</p>{% endif %}
+    {% if paper.relevance_status %}<p><strong>Screening</strong> {{ paper.relevance_status|status_label }}</p>{% endif %}
+  </div>
+
+  <section class="abstract">
+    <h2>Abstract</h2>
+    {% if paper.abstract %}<p>{{ paper.abstract }}</p>{% else %}<p class="missing">Abstract not available.</p>{% endif %}
+  </section>
+
+  {% if versions %}
+  <section class="versions">
+    <h2>Versions</h2>
+    <p class="small">Classification: {{ versions.classification }}</p>
+    <ul>
+      {% for member in versions.members %}
+      <li>
+        {% if member.paper_id == paper.paper_id %}<strong>{% endif %}
+        <a href="{{ url_for('pages.paper_detail', paper_id=member.paper_id) }}">{{ member.title }}</a>
+        {% if member.paper_id == paper.paper_id %}</strong>{% endif %}
+        {% if member.is_representative %}<span class="tag">representative</span>{% endif %}
+        <span class="small">({{ member.year or 'n/a' }} · {{ member.venue or 'unknown' }} · {{ member.doi or 'no DOI' }})</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <section class="cite-panel">
+    <details>
+      <summary>Cite</summary>
+      <div class="citation-box">
+        <p class="small">APA: {{ citation_apa }}</p>
+        <p class="small">IEEE: {{ citation_ieee }}</p>
+        <button class="copy-cite" data-text="{{ citation_apa }}">Copy APA</button>
+        <button class="copy-cite" data-text="{{ citation_ieee }}">Copy IEEE</button>
+      </div>
+    </details>
+  </section>
+
+  <section class="ai-panel">
+    <h2>AI-assisted understanding</h2>
+    <p class="small">Generated on demand from title, authors, abstract and metadata. Nothing is fetched from the full text.</p>
+    <div class="ai-actions">
+      <button data-analysis="tldr" data-paper-id="{{ paper.paper_id }}">Generate TL;DR</button>
+      <button data-analysis="contributions" data-paper-id="{{ paper.paper_id }}">Key Contributions</button>
+      <button data-analysis="methodology" data-paper-id="{{ paper.paper_id }}">Methodology</button>
+      <button data-analysis="limitations" data-paper-id="{{ paper.paper_id }}">Limitations</button>
+    </div>
+    <div class="ai-output" aria-live="polite"></div>
+  </section>
+
+</article>
+{% endblock %}

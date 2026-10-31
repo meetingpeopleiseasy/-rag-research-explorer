@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Analytics · RAG Research Explorer{% endblock %}
+{% block content %}
+<div class="analytics-page">
+  <h1>Research Analytics</h1>
+  <p class="subtitle">All numbers are computed from the local candidate corpus, not from the full RAG literature.</p>
+  <p class="small note">
+    Scope: {{ 'included + uncertain' if include_uncertain else 'included only' }} ·
+    <a href="{{ url_for('pages.analytics', statuses='included,uncertain' if not include_uncertain else 'included') }}">
+      {{ 'include uncertain' if not include_uncertain else 'included only' }}
+    </a>
+  </p>
+  <p id="analytics-note" class="small note"></p>
+  <div class="chart-grid">
+    <div class="panel"><h2>Publication trend</h2><div id="chart-trend" class="chart-box"></div></div>
+    <div class="panel"><h2>Top research topics</h2><div id="chart-topics" class="chart-box"></div></div>
+    <div class="panel"><h2>Emerging keywords</h2><div id="chart-emerging" class="chart-box"></div></div>
+    <div class="panel"><h2>Top authors</h2><div id="chart-authors" class="chart-box"></div></div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<script>
+function shortLabel(value) {
+  return String(value).length > 18 ? String(value).slice(0, 17) + "…" : value;
+}
+async function loadAnalytics() {
+  const response = await fetch("/api/analytics/summary?statuses={{ statuses }}");
+  const data = await response.json();
+  document.getElementById("analytics-note").textContent =
+    `Papers ${data.papers} · Authors ${data.authors} · Years ${data.years}. ` + (data.note || "");
+  if (typeof echarts === "undefined") {
+    document.querySelectorAll(".chart-box").forEach(el => (el.textContent = "ECharts failed to load."));
+    return;
+  }
+  const trend = echarts.init(document.getElementById("chart-trend"));
+  trend.setOption({
+    tooltip: { trigger: "axis" },
+    grid: { left: 40, right: 20, top: 30, bottom: 30 },
+    xAxis: { type: "category", data: data.trend.years },
+    yAxis: { type: "value", name: "papers" },
+    series: [{ type: "line", data: data.trend.counts, smooth: true, color: "#1769e0" }]
+  });
+  const topics = echarts.init(document.getElementById("chart-topics"));
+  topics.setOption({
+    tooltip: { trigger: "axis" },
+    grid: { left: 160, right: 20, top: 20, bottom: 30 },
+    xAxis: { type: "value" },
+    yAxis: { type: "category", data: data.topics.map(t => t.term).reverse(), axisLabel: { formatter: shortLabel } },
+    series: [{ type: "bar", data: data.topics.map(t => t.papers).reverse(), color: "#438ce8" }]
+  });
+  const emerging = echarts.init(document.getElementById("chart-emerging"));
+  emerging.setOption({
+    tooltip: { trigger: "axis" },
+    grid: { left: 130, right: 20, top: 20, bottom: 30 },
+    xAxis: { type: "value" },
+    yAxis: { type: "category", data: data.emerging_keywords.keywords.map(k => k.term).reverse(), axisLabel: { formatter: shortLabel } },
+    series: [{ type: "bar", data: data.emerging_keywords.keywords.map(k => k.late_count - k.early_count).reverse(), color: "#38a96b" }]
+  });
+  const authors = echarts.init(document.getElementById("chart-authors"));
+  authors.setOption({
+    tooltip: { trigger: "axis" },
+    grid: { left: 150, right: 20, top: 20, bottom: 30 },
+    xAxis: { type: "value" },
+    yAxis: { type: "category", data: data.top_authors.authors.map(a => a.author).reverse(), axisLabel: { formatter: shortLabel } },
+    series: [{ type: "bar", data: data.top_authors.authors.map(a => a.papers).reverse(), color: "#1769e0" }]
+  });
+}
+document.addEventListener("DOMContentLoaded", loadAnalytics);
+</script>
+{% endblock %}

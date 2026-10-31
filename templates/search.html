@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% set years_param = selected_years|join(',') %}
+{% set doc_types_param = selected_doc_types|join(',') %}
+{% set statuses_param = selected_statuses|join(',') %}
+{% macro filter_href(page) -%}
+  {{ url_for('pages.search_page', q=data.query, page=page, years=years_param or None, doc_types=doc_types_param or None, statuses=statuses_param or None, year_from=data.year_from or None, year_to=data.year_to or None) }}
+{%- endmacro %}
+{% block content %}
+<div class="search-page">
+  <form class="search-bar compact" action="{{ url_for('pages.search_page') }}" method="get">
+    <input type="text" name="q" value="{{ data.query }}" placeholder="Search papers…" required>
+    <button type="submit">Search</button>
+  </form>
+
+  <div class="result-head">
+    <h2>“{{ data.query }}”</h2>
+    <span class="count">{{ data.total }} results · page {{ data.page }}/{{ data.pages }}</span>
+  </div>
+
+  <section class="filter-panel">
+    <h3>Filters</h3>
+    <form action="{{ url_for('pages.search_page') }}" method="get">
+      <input type="hidden" name="q" value="{{ data.query }}">
+      <div class="filter-group">
+        <span class="filter-label">Year</span>
+        {% for year in filter_options.years %}
+          <label class="filter-option">
+            <input type="checkbox" name="years" value="{{ year }}" {% if year in selected_years %}checked{% endif %}>
+            {{ year }}
+          </label>
+        {% endfor %}
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Document type</span>
+        {% for doc_type in filter_options.doc_types %}
+          <label class="filter-option">
+            <input type="checkbox" name="doc_types" value="{{ doc_type }}" {% if doc_type in selected_doc_types %}checked{% endif %}>
+            {{ doc_type|doc_type_label }}
+          </label>
+        {% endfor %}
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Screening status</span>
+        {% for status in filter_options.statuses %}
+          <label class="filter-option">
+            <input type="checkbox" name="statuses" value="{{ status }}" {% if status in selected_statuses %}checked{% endif %}>
+            {{ status|status_label }}
+          </label>
+        {% endfor %}
+        <details class="filter-note">
+          <summary>What does this mean?</summary>
+          <span>Screening status comes from title/abstract heuristic rules, not an academic quality rating. Excluded and uncertain records are still shown with a label.</span>
+        </details>
+      </div>
+      <div class="filter-actions">
+        <button type="submit" class="secondary">Apply filters</button>
+        <a class="secondary" href="{{ url_for('pages.search_page', q=data.query) }}">Clear filters</a>
+      </div>
+    </form>
+  </section>
+
+  {% if data.results %}
+    <section class="bulk-panel">
+      <h3>Research actions</h3>
+      <p class="small">Select papers below, then choose an action.</p>
+      <div class="bulk-actions">
+        <button id="overview-btn" class="secondary" disabled>Generate Research Overview</button>
+        <input id="qa-question" type="text" placeholder="Ask a question about the selection…">
+        <button id="qa-btn" class="secondary" disabled>Ask</button>
+        <select id="collection-select" class="collection-select"></select>
+        <button id="add-selected-btn" class="secondary" disabled>Add selected to collection</button>
+      </div>
+      <div id="ai-output" class="ai-output" aria-live="polite"></div>
+    </section>
+
+    <ol class="results">
+      {% for item in data.results %}
+      <li class="result">
+        <div class="rank"><input type="checkbox" class="select-paper" value="{{ item.paper_id }}"></div>
+        <div class="body">
+          <a class="title" href="{{ url_for('pages.paper_detail', paper_id=item.paper_id) }}">{{ item.title_highlighted|safe }}</a>
+          <div class="meta">
+            {{ item.authors[:4]|join(', ') }}{% if item.authors|length > 4 %} et al.{% endif %}
+            · {{ item.year or 'n/a' }} · {{ item.venue or 'unknown venue' }}
+          </div>
+          {% if item.snippet %}<div class="snippet">{{ item.snippet|safe }}</div>{% endif %}
+          <div class="tags">
+            {% if item.saved %}<span class="tag">Saved</span>{% endif %}
+            {% if item.doi %}<span class="tag">DOI</span>{% endif %}
+            {% if item.doc_type %}<span class="tag">{{ item.doc_type|doc_type_label }}</span>{% endif %}
+            {% if item.relevance_status in ['excluded','uncertain'] %}
+              <span class="tag warn">Screening {{ item.relevance_status|status_label }}</span>
+            {% endif %}
+            {% if item.duplicate_kind == 'confirmed_same_work' or item.duplicate_kind == 'same_doi' %}
+              <span class="tag">Same work · {{ item.member_ids|length }} versions</span>
+            {% elif item.duplicate_kind in ['suspected_same_work','suspected_duplicate'] %}
+              <span class="tag warn">Possible duplicate</span>
+            {% endif %}
+          </div>
+          <details class="debug">
+            <summary>debug</summary>
+            <span>BM25 {{ '%.6f'|format(item.score) }}</span>
+            <span>paper_id {{ item.paper_id }}</span>
+          </details>
+          <div class="explore-actions">
+            <a href="{{ url_for('pages.paper_detail', paper_id=item.paper_id) }}">Open detail</a>
+            <a href="{{ url_for('pages.explore', paper_id=item.paper_id) }}">Explore from this paper</a>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+
+    <div class="pagination">
+      {% if data.page > 1 %}<a href="{{ filter_href(data.page-1) }}">← Prev</a>{% endif %}
+      <span>{{ data.page }} / {{ data.pages }}</span>
+      {% if data.page < data.pages %}<a href="{{ filter_href(data.page+1) }}">Next →</a>{% endif %}
+    </div>
+  {% else %}
+    <div class="empty">
+      <p>No matching papers found.</p>
+      <a class="secondary" href="{{ url_for('pages.index') }}">Try another search</a>
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

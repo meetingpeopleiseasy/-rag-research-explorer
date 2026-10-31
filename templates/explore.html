@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}Explore · {{ paper.title or 'Paper' }}{% endblock %}
+{% block content %}
+<div class="explore-page">
+  <a class="back" href="{{ url_for('pages.paper_detail', paper_id=paper.paper_id) }}">← Paper detail</a>
+
+  <section class="seed-card">
+    <span class="seed-label">Seed paper</span>
+    <h1>{{ paper.title or '(untitled)' }}</h1>
+    <p class="meta">
+      {{ paper.authors[:4]|join(', ') }}{% if paper.authors|length > 4 %} et al.{% endif %}
+      · {{ paper.year or 'n/a' }} · {{ paper.venue or 'unknown venue' }}
+    </p>
+    {% if paper.abstract %}<p class="abstract">{{ paper.abstract }}</p>{% else %}<p class="missing">Abstract not available.</p>{% endif %}
+    {% if versions %}
+      <p class="small">Version group {{ versions.group_id }} · {{ versions.classification }}</p>
+    {% endif %}
+  </section>
+
+  <section class="related">
+    <div class="result-head">
+      <h2>Related papers</h2>
+      <span class="count">{{ recommendation.total }} candidates</span>
+    </div>
+    <p class="small note">
+      Relevance status is a heuristic pre-screen from title/abstract rules, not an academic quality rating.
+      <a href="{{ url_for('pages.explore', paper_id=paper.paper_id, include_excluded=1) }}">Show excluded candidates too</a>.
+    </p>
+    <div class="selection">
+      <select id="collection-select" class="collection-select"></select>
+      <button id="add-selected-btn" class="secondary" data-seed-id="{{ paper.paper_id }}">Add seed + selected to collection</button>
+    </div>
+
+    {% if recommendation.related_papers %}
+      <ol class="results">
+        {% for item in recommendation.related_papers %}
+        <li class="result">
+          <div class="rank"><input type="checkbox" class="select-paper" value="{{ item.paper_id }}"></div>
+          <div class="body">
+            <a class="title" href="{{ url_for('pages.paper_detail', paper_id=item.paper_id) }}">{{ item.title or '(untitled)' }}</a>
+            <div class="meta">
+              {{ item.authors[:4]|join(', ') }}{% if item.authors|length > 4 %} et al.{% endif %}
+              · {{ item.year or 'n/a' }} · {{ item.venue or 'unknown venue' }}
+            </div>
+            {% if item.abstract %}<div class="snippet">{{ item.abstract[:260] }}{% if item.abstract|length > 260 %}…{% endif %}</div>{% endif %}
+            <div class="tags">
+              <span class="tag">relevance {{ item.relevance_status|status_label }}</span>
+              {% if item.record_type %}<span class="tag">{{ item.record_type|doc_type_label }}</span>{% endif %}
+              {% for reason in item.recommendation_reasons %}<span class="tag">{{ reason }}</span>{% endfor %}
+              {% if item.version_information %}<span class="tag">{{ item.version_information.classification }}</span>{% endif %}
+            </div>
+            <div class="similarity">
+              <span>title {{ '%.3f'|format(item.title_similarity) }}</span>
+              <span>abstract {{ '%.3f'|format(item.abstract_similarity) }}</span>
+              <span>authors {{ '%.3f'|format(item.author_overlap) }}</span>
+              <span class="muted">system score {{ '%.3f'|format(item.combined_score) }}</span>
+            </div>
+            <div class="explore-actions">
+              <a href="{{ url_for('pages.paper_detail', paper_id=item.paper_id) }}">Open detail</a>
+              <a href="{{ url_for('pages.explore', paper_id=item.paper_id, from=paper.paper_id) }}">Explore from this paper →</a>
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    {% else %}
+      <div class="empty"><p>No related papers found for this seed.</p></div>
+    {% endif %}
+  </section>
+</div>
+{% endblock %}

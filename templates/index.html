@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <h1>RAG Research Explorer</h1>
+  <p class="subtitle">Explore the research landscape of Retrieval-Augmented Generation.</p>
+  <form class="search-bar" action="{{ url_for('pages.search_page') }}" method="get">
+    <input type="text" name="q" placeholder="Search papers…" autofocus required>
+    <button type="submit">Search</button>
+  </form>
+  <div class="chips">
+    <span class="hint">Try:</span>
+    <a href="/search?q=Retrieval-Augmented%20Generation">Retrieval-Augmented Generation</a>
+    <a href="/search?q=RAG%20Evaluation">RAG Evaluation</a>
+    <a href="/search?q=Multimodal%20RAG">Multimodal RAG</a>
+    <a href="/search?q=RAG%20Hallucination">RAG Hallucination</a>
+    <a href="/search?q=Retrieval%20Methods">Retrieval Methods</a>
+  </div>
+  <div class="hero-actions">
+    <a class="secondary" href="{{ url_for('pages.collections_list') }}">Reading Collections</a>
+    <a class="secondary" href="{{ url_for('pages.research_overview') }}">Research Overview</a>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="metric">
+    <strong>{{ stats.papers }}</strong>
+    <span>candidate papers</span>
+  </div>
+  <div class="metric">
+    <strong>{{ stats.year_min }}–{{ stats.year_max }}</strong>
+    <span>coverage years</span>
+  </div>
+  <div class="metric">
+    <strong>{{ stats.authors }}</strong>
+    <span>authors (by name)</span>
+  </div>
+</section>
+
+<section class="home-panels">
+  <div class="panel">
+    <h2>Research topics</h2>
+    <p class="small note">Derived from local title/abstract text; not a complete field taxonomy.</p>
+    <ul class="topic-list">
+      {% for topic in stats.topics %}
+      <li><a href="{{ url_for('pages.search_page', q=topic.term) }}">{{ topic.term }}</a><span>{{ topic.papers }} papers</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="panel">
+    <h2>Document types</h2>
+    <ul class="topic-list">
+      {% for doc_type, count in stats.doc_types|dictsort(by='value', reverse=true) %}
+      <li><span>{{ doc_type|doc_type_label }}</span><span>{{ count }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock %}

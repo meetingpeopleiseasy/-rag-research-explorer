@@ -1,0 +1,300 @@
+[
+  {
+    "query_id": "q01",
+    "query": "retrieval augmented generation survey",
+    "intent": "查找 RAG 的整体综述",
+    "theme": "基础 RAG",
+      "annotations": {
+          "https://openalex.org/W4405418384": 2,
+          "https://openalex.org/W4406771321": 2,
+          "https://openalex.org/W7162187616": 1,
+          "https://openalex.org/W7220746290": 2,
+          "https://openalex.org/W4406031095": 2,
+          "https://openalex.org/W4226069413": 2,
+          "https://openalex.org/W4401857375": 2,
+          "https://openalex.org/W4415152171": 2,
+          "https://openalex.org/W4406542750": 2,
+          "https://openalex.org/W7147234952": 2
+      }
+  },
+  {
+    "query_id": "q02",
+    "query": "retrieval-augmented generation for language models",
+    "intent": "查找 RAG 用于语言模型的基础方法",
+    "theme": "基础 RAG",
+      "annotations": {
+          "https://openalex.org/W4410877485": 2,
+          "https://openalex.org/W4393147129": 2,
+          "https://openalex.org/W4404280355": 2,
+          "https://openalex.org/W4407951529": 2,
+          "https://openalex.org/W4416034621": 2,
+          "https://openalex.org/W4393028308": 2,
+          "https://openalex.org/W4390682079": 2,
+          "https://openalex.org/W4410078500": 2,
+          "https://openalex.org/W4396648407": 2,
+          "https://openalex.org/W7123353943": 2
+      }
+  },
+  {
+    "query_id": "q03",
+    "query": "dense passage retrieval",
+    "intent": "查找稠密检索方法",
+    "theme": "检索方法",
+      "annotations": {
+          "https://openalex.org/W3206455169": 1,
+          "https://openalex.org/W3200181722": 1,
+          "https://openalex.org/W4390682079": 2,
+          "https://openalex.org/W3175980629": 1,
+          "https://openalex.org/W3168875417": 2,
+          "https://openalex.org/W4281477951": 2,
+          "https://openalex.org/W3185042171": 2,
+          "https://openalex.org/W3212628050": 2,
+          "https://openalex.org/W3196679537": 2,
+          "https://openalex.org/W3194741792": 1
+      }
+  },
+  {
+    "query_id": "q04",
+    "query": "retrieval augmentation for open-domain question answering",
+    "intent": "查找开放域问答中的检索增强",
+    "theme": "检索方法",
+      "annotations": {
+          "https://openalex.org/W4281972188": 2,
+          "https://openalex.org/W3205718179": 2,
+          "https://openalex.org/W4400460572": 2,
+          "https://openalex.org/W4387355694": 2
+      }
+  },
+  {
+    "query_id": "q05",
+    "query": "RAG evaluation benchmark",
+    "intent": "查找 RAG 评估基准",
+    "theme": "RAG 评估",
+      "annotations": {
+          "https://openalex.org/W7212082153": 2,
+          "https://openalex.org/W7168373441": 2,
+          "https://openalex.org/W7106118825": 2,
+          "https://openalex.org/W7212073728": 2,
+          "https://openalex.org/W7106801405": 2,
+          "https://openalex.org/W4416037024": 2,
+          "https://openalex.org/W7160923717": 2,
+          "https://openalex.org/W4403624452": 2,
+          "https://openalex.org/W7221059439": 2,
+          "https://openalex.org/W4403753183": 2
+      }
+  },
+  {
+    "query_id": "q06",
+    "query": "evaluating retrieval-augmented generation",
+    "intent": "查找 RAG 评估方法",
+    "theme": "RAG 评估",
+      "annotations": {
+          "https://openalex.org/W7161237794": 2,
+          "https://openalex.org/W4393674988": 2,
+          "https://openalex.org/W4405750326": 2,
+          "https://openalex.org/W4412931388": 2,
+          "https://openalex.org/W7155099853": 2,
+          "https://openalex.org/W4406192955": 2,
+          "https://openalex.org/W4412966133": 2,
+          "https://openalex.org/W4386081602": 2,
+          "https://openalex.org/W4402703492": 2,
+          "https://openalex.org/W7113084691": 2
+      }
+  },
+  {
+    "query_id": "q07",
+    "query": "multimodal retrieval-augmented generation",
+    "intent": "查找多模态 RAG",
+    "theme": "多模态 RAG",
+      "annotations": {
+          "https://openalex.org/W7164805720": 2,
+          "https://openalex.org/W4415152171": 2,
+          "https://openalex.org/W4406524208": 2,
+          "https://openalex.org/W7162894282": 2,
+          "https://openalex.org/W7168296606": 2,
+          "https://openalex.org/W7162753414": 2,
+          "https://openalex.org/W4309953147": 2,
+          "https://openalex.org/W4404341467": 2,
+          "https://openalex.org/W4403573894": 2,
+          "https://openalex.org/W4409047487": 2
+      }
+  },
+  {
+    "query_id": "q08",
+    "query": "multimodal RAG",
+    "intent": "查找多模态 RAG 研究",
+    "theme": "多模态 RAG",
+      "annotations": {
+          "https://openalex.org/W7164805720": 2,
+          "https://openalex.org/W4415152171": 2,
+          "https://openalex.org/W4406524208": 2,
+          "https://openalex.org/W7162894282": 2,
+          "https://openalex.org/W7168296606": 2,
+          "https://openalex.org/W7162753414": 2,
+          "https://openalex.org/W4404341467": 2,
+          "https://openalex.org/W4403573894": 2,
+          "https://openalex.org/W4409047487": 2,
+          "https://openalex.org/W7223041946": 2
+      }
+  },
+  {
+    "query_id": "q09",
+    "query": "hallucination in retrieval-augmented generation",
+    "intent": "查找 RAG 幻觉问题研究",
+    "theme": "幻觉问题",
+      "annotations": {
+          "https://openalex.org/W4390528749": 2,
+          "https://openalex.org/W4412945185": 2,
+          "https://openalex.org/W4395693361": 2,
+          "https://openalex.org/W7166036265": 2,
+          "https://openalex.org/W4416017646": 2,
+          "https://openalex.org/W4401042735": 2,
+          "https://openalex.org/W4416010344": 2,
+          "https://openalex.org/W4403679005": 2,
+          "https://openalex.org/W7154933272": 2,
+          "https://openalex.org/W7125586192": 2
+      }
+  },
+  {
+    "query_id": "q10",
+    "query": "mitigating hallucination in RAG",
+    "intent": "查找缓解 RAG 幻觉的方法",
+    "theme": "幻觉问题",
+      "annotations": {
+          "https://openalex.org/W4412945185": 2,
+          "https://openalex.org/W7154933272": 2,
+          "https://openalex.org/W4416379250": 2,
+          "https://openalex.org/W4410362031": 2,
+          "https://openalex.org/W4393147129": 2,
+          "https://openalex.org/W4415662252": 2
+      }
+  },
+  {
+    "query_id": "q11",
+    "query": "retrieval-augmented language model 2021",
+    "intent": "查找早期检索增强语言模型",
+    "theme": "早期研究",
+      "annotations": {
+          "https://openalex.org/W3186138538": 2,
+          "https://openalex.org/W4392911072": 2
+      }
+  },
+  {
+    "query_id": "q12",
+    "query": "REALM retrieval augmented language model",
+    "intent": "查找 REALM 等早期工作",
+    "theme": "早期研究",
+      "annotations": {
+          "https://openalex.org/W4366562915": 2,
+          "https://openalex.org/W4405974421": 2,
+          "https://openalex.org/W4385573236": 2
+      }
+  },
+  {
+    "query_id": "q13",
+    "query": "RAG for knowledge-intensive NLP",
+    "intent": "查找面向知识密集 NLP 的 RAG",
+    "theme": "基础 RAG",
+      "annotations": {
+          "https://openalex.org/W4412887679": 2,
+          "https://openalex.org/W7170089727": 2,
+          "https://openalex.org/W4414787176": 2,
+          "https://openalex.org/W4416034993": 2,
+          "https://openalex.org/W4412376862": 2,
+          "https://openalex.org/W4402018589": 2,
+          "https://openalex.org/W4416075695": 2,
+          "https://openalex.org/W7106791207": 2,
+          "https://openalex.org/W4411922903": 2
+      }
+  },
+  {
+    "query_id": "q14",
+    "query": "knowledge-intensive NLP retrieval",
+    "intent": "查找知识密集 NLP 的检索方法",
+    "theme": "检索方法",
+      "annotations": {
+          "https://openalex.org/W4287891177": 2,
+          "https://openalex.org/W4225992558": 2,
+          "https://openalex.org/W4385573439": 1,
+          "https://openalex.org/W4385573010": 2,
+          "https://openalex.org/W4412887679": 2,
+          "https://openalex.org/W4313304293": 2,
+          "https://openalex.org/W7170089727": 2,
+          "https://openalex.org/W4302305884": 2,
+          "https://openalex.org/W4387322926": 2,
+          "https://openalex.org/W4285276310": 1
+      }
+  },
+  {
+    "query_id": "q15",
+    "query": "RAG for question answering",
+    "intent": "查找 RAG 用于问答系统",
+    "theme": "基础 RAG",
+      "annotations": {
+          "https://openalex.org/W7204220362": 2,
+          "https://openalex.org/W3175741480": 2,
+          "https://openalex.org/W4399932275": 2,
+          "https://openalex.org/W4402646625": 2,
+          "https://openalex.org/W4410295740": 2,
+          "https://openalex.org/W4396823873": 2,
+          "https://openalex.org/W4415799040": 2,
+          "https://openalex.org/W7222990367": 2,
+          "https://openalex.org/W4403585726": 2,
+          "https://openalex.org/W4406301819": 2
+      }
+  },
+  {
+    "query_id": "q16",
+    "query": "RAG system architecture",
+    "intent": "查找 RAG 系统架构设计",
+    "theme": "基础 RAG",
+      "annotations": {
+          "https://openalex.org/W7117990638": 2,
+          "https://openalex.org/W4407984868": 2,
+          "https://openalex.org/W7219973837": 2,
+          "https://openalex.org/W4408258650": 2,
+          "https://openalex.org/W7165739936": 2,
+          "https://openalex.org/W7165797641": 2,
+          "https://openalex.org/W7130554610": 2,
+          "https://openalex.org/W7139033621": 2,
+          "https://openalex.org/W7221683310": 2,
+          "https://openalex.org/W4411379560": 2
+      }
+  },
+  {
+    "query_id": "q17",
+    "query": "retrieval-augmented generation applications",
+    "intent": "查找 RAG 应用",
+    "theme": "基础 RAG",
+      "annotations": {
+          "https://openalex.org/W4403622688": 2,
+          "https://openalex.org/W7161237794": 2,
+          "https://openalex.org/W7220746290": 2,
+          "https://openalex.org/W7167621486": 2,
+          "https://openalex.org/W4410362031": 2,
+          "https://openalex.org/W4415964381": 2,
+          "https://openalex.org/W7162642619": 2,
+          "https://openalex.org/W4415527776": 2,
+          "https://openalex.org/W4415062100": 2,
+          "https://openalex.org/W7130574252": 2
+      }
+  },
+  {
+    "query_id": "q18",
+    "query": "contextual retrieval for RAG",
+    "intent": "查找上下文检索与 RAG 结合",
+    "theme": "检索方法",
+      "annotations": {
+          "https://openalex.org/W4414787176": 2,
+          "https://openalex.org/W7162334059": 1,
+          "https://openalex.org/W4412887679": 2,
+          "https://openalex.org/W7164495097": 2,
+          "https://openalex.org/W4403899386": 2,
+          "https://openalex.org/W4408258650": 2,
+          "https://openalex.org/W7123345944": 2,
+          "https://openalex.org/W7171388658": 1,
+          "https://openalex.org/W7152478195": 2,
+          "https://openalex.org/W7214435459": 2
+      }
+  }
+]

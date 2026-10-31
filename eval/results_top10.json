@@ -1,0 +1,1791 @@
+{
+  "generated_at": "2026-10-30T03:30:03.382120+00:00",
+  "db": "data/papers.db",
+  "k": 10,
+  "queries": [
+    {
+      "query_id": "q01",
+      "query": "retrieval augmented generation survey",
+      "intent": "查找 RAG 的整体综述",
+      "theme": "基础 RAG",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W4405418384",
+          "title": "Survey on Speech Recognition and Retrieval-Augmented Generation",
+          "year": 2024,
+          "venue": "International Journal of Advances in Engineering and Management",
+          "doi": "https://doi.org/10.35629/5252-06127581",
+          "bm25_score": -5.20679614155813
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W4406771321",
+          "title": "Evaluation of Retrieval-Augmented Generation: A Survey",
+          "year": 2025,
+          "venue": "Communications in computer and information science",
+          "doi": "https://doi.org/10.1007/978-981-96-1024-2_8",
+          "bm25_score": -5.149071277099692
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W7162187616",
+          "title": "Trustworthy Agentic RAG for Enterprise AI: A Systematic Survey and Framework for Security, Privacy, Robustness, Governance, Evaluation, and Cloud-Native Deployment — Companion Repository",
+          "year": 2026,
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+          "doi": "https://doi.org/10.5281/zenodo.20359476",
+          "bm25_score": -5.131383919163286
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W7220746290",
+          "title": "A Survey on Optimizing Retrieval Augmented Generation Applications",
+          "year": 2026,
+          "venue": "Lecture notes in electrical engineering",
+          "doi": "https://doi.org/10.1007/978-981-92-1243-9_14",
+          "bm25_score": -5.126719159289773
+        },
+        {
+          "rank": 5,
+          "paper_id": "https://openalex.org/W4406031095",
+          "title": "Retrieval-Augmented Generation with Graphs (GraphRAG)",
+          "year": 2024,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2501.00309",
+          "bm25_score": -4.847591596414578
+        },
+        {
+          "rank": 6,
+          "paper_id": "https://openalex.org/W4226069413",
+          "title": "A Survey on Retrieval-Augmented Text Generation",
+          "year": 2022,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2202.01110",
+          "bm25_score": -4.758171668087972
+        },
+        {
+          "rank": 7,
+          "paper_id": "https://openalex.org/W4401857375",
+          "title": "A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models",
+          "year": 2024,
+          "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+          "doi": "https://doi.org/10.1145/3637528.3671470",
+          "bm25_score": -4.640733951515942
+        },
+        {
+          "rank": 8,
+          "paper_id": "https://openalex.org/W4415152171",
+          "title": "A Survey of Multimodal Retrieval-Augmented Generation",
+          "year": 2025,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2504.08748",
+          "bm25_score": -4.346632670686204
+        },
+        {
+          "rank": 9,
+          "paper_id": "https://openalex.org/W4406542750",
+          "title": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
+          "year": 2025,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2501.09136",
+          "bm25_score": -4.302593877623919
+        },
+        {
+          "rank": 10,
+          "paper_id": "https://openalex.org/W7147234952",
+          "title": "A Survey of Personalization: From RAG to Agent",
+          "year": 2026,
+          "venue": "ACM Transactions on Information Systems",
+          "doi": "https://doi.org/10.1145/3802586",
+          "bm25_score": -4.1627798470002135
+        }
+      ]
+    },
+    {
+      "query_id": "q02",
+      "query": "retrieval-augmented generation for language models",
+      "intent": "查找 RAG 用于语言模型的基础方法",
+      "theme": "基础 RAG",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W4410877485",
+          "title": "ragnar: Retrieval-Augmented Generation (RAG) Workflows",
+          "year": 2025,
+          "venue": null,
+          "doi": "https://doi.org/10.32614/cran.package.ragnar",
+          "bm25_score": -1.0370989099116766e-05
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W4393147129",
+          "title": "Benchmarking Large Language Models in Retrieval-Augmented Generation",
+          "year": 2024,
+          "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+          "doi": "https://doi.org/10.1609/aaai.v38i16.29728",
+          "bm25_score": -1.0017567838137623e-05
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W4404280355",
+          "title": "Performance comparison of retrieval-augmented generation and fine-tuned large language models for construction safety management knowledge retrieval",
+          "year": 2024,
+          "venue": "Automation in Construction",
+          "doi": "https://doi.org/10.1016/j.autcon.2024.105846",
+          "bm25_score": -9.657221855592697e-06
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W4407951529",
+          "title": "PersianRAG: A Retrieval-Augmented Generation System for Persian Language",
+          "year": 2024,
+          "venue": "International Conference on Information and Knowledge Technology (IKT)",
+          "doi": "https://doi.org/10.1109/ikt65497.2024.10892726",
+          "bm25_score": -9.648211060876365e-06
+        },
+        {
+          "rank": 5,
+          "paper_id": "https://openalex.org/W4416034621",
+          "title": "ImpRAG: Retrieval-Augmented Generation with Implicit Queries",
+          "year": 2025,
+          "venue": "Findings of the Association for Computational Linguistics: EMNLP (Findings of EMNLP)",
+          "doi": "https://doi.org/10.18653/v1/2025.findings-emnlp.472",
+          "bm25_score": -9.617240945017532e-06
+        },
+        {
+          "rank": 6,
+          "paper_id": "https://openalex.org/W4393028308",
+          "title": "SRAG: Speech Retrieval Augmented Generation for Spoken Language Understanding",
+          "year": 2023,
+          "venue": "International Seminar on Research of Information Technology and Intelligent Systems (ISRITI)",
+          "doi": "https://doi.org/10.1109/isriti60336.2023.10467285",
+          "bm25_score": -9.608223782714625e-06
+        },
+        {
+          "rank": 7,
+          "paper_id": "https://openalex.org/W4390682079",
+          "title": "AutoQIR: Auto-Encoding Questions with Retrieval Augmented Decoding for Unsupervised Passage Retrieval and Zero-shot Question Generation",
+          "year": 2023,
+          "venue": "International conference Recent advances in natural language processing",
+          "doi": "https://doi.org/10.26615/978-954-452-092-2_124",
+          "bm25_score": -9.51798121641102e-06
+        },
+        {
+          "rank": 8,
+          "paper_id": "https://openalex.org/W4410078500",
+          "title": "Retrieval-Augmented Generation: Architecture, Techniques, and Evaluations",
+          "year": 2025,
+          "venue": "Journal of modern technology and engineering.",
+          "doi": "https://doi.org/10.62476/jmte.10142",
+          "bm25_score": -9.514441488408978e-06
+        },
+        {
+          "rank": 9,
+          "paper_id": "https://openalex.org/W4396648407",
+          "title": "Retrieval-Augmented Generation with Quantized Large Language Models: A Comparative Analysis",
+          "year": 2023,
+          "venue": "International Conference on Internet of Things, Automation and Artificial Intelligence (IoTAAI)",
+          "doi": "https://doi.org/10.1145/3653081.3653102",
+          "bm25_score": -9.49041976061887e-06
+        },
+        {
+          "rank": 10,
+          "paper_id": "https://openalex.org/W7123353943",
+          "title": "Comparative Performance of Retrieval Augmented Generation Tourism Chatbots",
+          "year": 2026,
+          "venue": "Indonesian Journal of Innovation Studies",
+          "doi": "https://doi.org/10.21070/ijins.v27i1.1836",
+          "bm25_score": -9.456930098888267e-06
+        }
+      ]
+    },
+    {
+      "query_id": "q03",
+      "query": "dense passage retrieval",
+      "intent": "查找稠密检索方法",
+      "theme": "检索方法",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W3206455169",
+          "title": "RocketQAv2: A Joint Training Method for Dense Passage Retrieval and Passage Re-ranking",
+          "year": 2021,
+          "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+          "doi": "https://doi.org/10.18653/v1/2021.emnlp-main.224",
+          "bm25_score": -10.49587927260535
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W3200181722",
+          "title": "Phrase Retrieval Learns Passage Retrieval, Too",
+          "year": 2021,
+          "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+          "doi": "https://doi.org/10.18653/v1/2021.emnlp-main.297",
+          "bm25_score": -10.362174816826016
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W4390682079",
+          "title": "AutoQIR: Auto-Encoding Questions with Retrieval Augmented Decoding for Unsupervised Passage Retrieval and Zero-shot Question Generation",
+          "year": 2023,
+          "venue": "International conference Recent advances in natural language processing",
+          "doi": "https://doi.org/10.26615/978-954-452-092-2_124",
+          "bm25_score": -9.66756105125499
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W3175980629",
+          "title": "Pseudo-Relevance Feedback for Multiple Representation Dense Retrieval",
+          "year": 2021,
+          "venue": "ACM SIGIR International Conference on Theory of Information Retrieval (ICTIR)",
+          "doi": "https://doi.org/10.1145/3471158.3472250",
+          "bm25_score": -8.986514751952834
+        },
+        {
+          "rank": 5,
+          "paper_id": "https://openalex.org/W3168875417",
+          "title": "RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering",
+          "year": 2021,
+          "venue": "Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)",
+          "doi": "https://doi.org/10.18653/v1/2021.naacl-main.466",
+          "bm25_score": -8.866875599361911
+        },
+        {
+          "rank": 6,
+          "paper_id": "https://openalex.org/W4281477951",
+          "title": "Retrieval-Augmented Multilingual Keyphrase Generation with Retriever-Generator Iterative Training",
+          "year": 2022,
+          "venue": "Findings of the Association for Computational Linguistics: NAACL",
+          "doi": "https://doi.org/10.18653/v1/2022.findings-naacl.92",
+          "bm25_score": -8.846977635496543
+        },
+        {
+          "rank": 7,
+          "paper_id": "https://openalex.org/W3185042171",
+          "title": "One Question Answering Model for Many Languages with Cross-lingual Dense Passage Retrieval",
+          "year": 2021,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2107.11976",
+          "bm25_score": -8.760523478004494
+        },
+        {
+          "rank": 8,
+          "paper_id": "https://openalex.org/W3212628050",
+          "title": "Robust Retrieval Augmented Generation for Zero-shot Slot Filling",
+          "year": 2021,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2108.13934",
+          "bm25_score": -7.8137771015256625
+        },
+        {
+          "rank": 9,
+          "paper_id": "https://openalex.org/W3196679537",
+          "title": "Robust Retrieval Augmented Generation for Zero-shot Slot Filling",
+          "year": 2021,
+          "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+          "doi": "https://doi.org/10.18653/v1/2021.emnlp-main.148",
+          "bm25_score": -7.8013128457989565
+        },
+        {
+          "rank": 10,
+          "paper_id": "https://openalex.org/W3194741792",
+          "title": "Query Embedding Pruning for Dense Retrieval",
+          "year": 2021,
+          "venue": "ACM International Conference on Information and Knowledge Management (CIKM)",
+          "doi": "https://doi.org/10.1145/3459637.3482162",
+          "bm25_score": -7.801192027259383
+        }
+      ]
+    },
+    {
+      "query_id": "q04",
+      "query": "retrieval augmentation for open-domain question answering",
+      "intent": "查找开放域问答中的检索增强",
+      "theme": "检索方法",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W4281972188",
+          "title": "ZusammenQA: Data Augmentation with Specialized Models for Cross-lingual Open-retrieval Question Answering System",
+          "year": 2022,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2205.14981",
+          "bm25_score": -13.60403574792756
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W3205718179",
+          "title": "Retrieval-guided Counterfactual Generation for QA",
+          "year": 2022,
+          "venue": "Annual Meeting of the Association for Computational Linguistics (ACL)",
+          "doi": "https://doi.org/10.18653/v1/2022.acl-long.117",
+          "bm25_score": -13.519051958911428
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W4400460572",
+          "title": "FIT-RAG: Black-Box RAG with Factual Information and Token Reduction",
+          "year": 2024,
+          "venue": "ACM Transactions on Information Systems",
+          "doi": "https://doi.org/10.1145/3676957",
+          "bm25_score": -9.882367046835757
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W4387355694",
+          "title": "Making Retrieval-Augmented Language Models Robust to Irrelevant Context",
+          "year": 2023,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2310.01558",
+          "bm25_score": -9.159808258990168
+        }
+      ]
+    },
+    {
+      "query_id": "q05",
+      "query": "RAG evaluation benchmark",
+      "intent": "查找 RAG 评估基准",
+      "theme": "RAG 评估",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W7212082153",
+          "title": "Task-Oriented RAG Evaluation: Derived Evaluation Results",
+          "year": 2026,
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+          "doi": "https://doi.org/10.5281/zenodo.22681798",
+          "bm25_score": -4.960522203318789
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W7168373441",
+          "title": "LiveRAG: A Diverse Q&A Dataset with Varying Difficulty Level for RAG Evaluation",
+          "year": 2026,
+          "venue": "International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)",
+          "doi": "https://doi.org/10.1145/3805712.3808585",
+          "bm25_score": -4.910501664922136
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W7106118825",
+          "title": "LiveRAG: A diverse Q&A dataset with varying difficulty level for RAG evaluation",
+          "year": 2025,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2511.14531",
+          "bm25_score": -4.90480400840951
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W7212073728",
+          "title": "Task-Oriented RAG Evaluation: Raw Generation and Retrieval Results",
+          "year": 2026,
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+          "doi": "https://doi.org/10.5281/zenodo.22678516",
+          "bm25_score": -4.9004921054183965
+        },
+        {
+          "rank": 5,
+          "paper_id": "https://openalex.org/W7106801405",
+          "title": "OmniEval: An Omnidirectional and Automatic RAG Evaluation Benchmark in Financial Domain",
+          "year": 2025,
+          "venue": "Underline Science Inc.",
+          "doi": "https://doi.org/10.48448/q5m6-qc47",
+          "bm25_score": -4.871541134363733
+        },
+        {
+          "rank": 6,
+          "paper_id": "https://openalex.org/W4416037024",
+          "title": "OmniEval: An Omnidirectional and Automatic RAG Evaluation Benchmark in Financial Domain",
+          "year": 2025,
+          "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+          "doi": "https://doi.org/10.18653/v1/2025.emnlp-main.292",
+          "bm25_score": -4.791553612345291
+        },
+        {
+          "rank": 7,
+          "paper_id": "https://openalex.org/W7160923717",
+          "title": "Generating Leakage-Free Benchmarks for Robust RAG Evaluation",
+          "year": 2026,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2605.08838",
+          "bm25_score": -4.789940737778858
+        },
+        {
+          "rank": 8,
+          "paper_id": "https://openalex.org/W4403624452",
+          "title": "GroUSE: A Benchmark to Evaluate Evaluators in Grounded Question Answering",
+          "year": 2024,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2409.06595",
+          "bm25_score": -4.562242064006006
+        },
+        {
+          "rank": 9,
+          "paper_id": "https://openalex.org/W7221059439",
+          "title": "RAG-PIBench: A Leakage-Aware Benchmark for Prompt-Injection Detection in Trustworthy RAG Systems",
+          "year": 2026,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2610.08571",
+          "bm25_score": -4.52639406574335
+        },
+        {
+          "rank": 10,
+          "paper_id": "https://openalex.org/W4403753183",
+          "title": "RAGBench: Explainable Benchmark for Retrieval-Augmented Generation Systems",
+          "year": 2024,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2407.11005",
+          "bm25_score": -4.313354123332228
+        }
+      ]
+    },
+    {
+      "query_id": "q06",
+      "query": "evaluating retrieval-augmented generation",
+      "intent": "查找 RAG 评估方法",
+      "theme": "RAG 评估",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W7161237794",
+          "title": "Deepchecks: Evaluating Retrieval-Augmented Generation (RAG)",
+          "year": 2026,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2605.14488",
+          "bm25_score": -3.47600061947103
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W4393674988",
+          "title": "Evaluating Accuracy Improvements of Large Language Models Using Retrieval Augmented Generation",
+          "year": 2023,
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+          "doi": "https://doi.org/10.5281/zenodo.8430247",
+          "bm25_score": -3.32029619254091
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W4405750326",
+          "title": "MSR28 Evaluating the Performance of GPT-4o and Retrieval-Augmented Generation (RAG) in Extracting Data From Journal Articles: A Comparative Study",
+          "year": 2024,
+          "venue": "Value in Health",
+          "doi": "https://doi.org/10.1016/j.jval.2024.10.2262",
+          "bm25_score": -3.211148482061108
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W4412931388",
+          "title": "mt RAG: A Multi-Turn Conversational Benchmark for Evaluating Retrieval-Augmented Generation Systems",
+          "year": 2025,
+          "venue": "Transactions of the Association for Computational Linguistics",
+          "doi": "https://doi.org/10.1162/tacl.a.19",
+          "bm25_score": -3.1533937477784733
+        },
+        {
+          "rank": 5,
+          "paper_id": "https://openalex.org/W7155099853",
+          "title": "Evaluating Multi-Hop Reasoning in RAG Systems: A Comparison of LLM-Based Retriever Evaluation Strategies",
+          "year": 2026,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2604.18234",
+          "bm25_score": -3.0077507970618353
+        },
+        {
+          "rank": 6,
+          "paper_id": "https://openalex.org/W4406192955",
+          "title": "RAG-Check: Evaluating Multimodal Retrieval Augmented Generation Performance",
+          "year": 2025,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2501.03995",
+          "bm25_score": -2.9923949657712323
+        },
+        {
+          "rank": 7,
+          "paper_id": "https://openalex.org/W4412966133",
+          "title": "Can LLMs be Trusted for Evaluating RAG Systems? A Survey of Methods and Datasets",
+          "year": 2025,
+          "venue": "IEEE Swiss Conference on Data Science (SDS)",
+          "doi": "https://doi.org/10.1109/sds66131.2025.00010",
+          "bm25_score": -2.907051305980356
+        },
+        {
+          "rank": 8,
+          "paper_id": "https://openalex.org/W4386081602",
+          "title": "RaLLe: A Framework for Developing and Evaluating Retrieval-Augmented Large Language Models",
+          "year": 2023,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2308.10633",
+          "bm25_score": -2.886802355370253
+        },
+        {
+          "rank": 9,
+          "paper_id": "https://openalex.org/W4402703492",
+          "title": "RAGEval: Scenario Specific RAG Evaluation Dataset Generation Framework",
+          "year": 2024,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2408.01262",
+          "bm25_score": -2.8395978242006628
+        },
+        {
+          "rank": 10,
+          "paper_id": "https://openalex.org/W7113084691",
+          "title": "Face the Facts! Evaluating RAG-based Pipelines for Professional Fact-Checking",
+          "year": 2024,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2412.15189",
+          "bm25_score": -2.8344486844251113
+        }
+      ]
+    },
+    {
+      "query_id": "q07",
+      "query": "multimodal retrieval-augmented generation",
+      "intent": "查找多模态 RAG",
+      "theme": "多模态 RAG",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W7164805720",
+          "title": "MMG-RAG: Multimodal Graph RAG for Medical Report Generation",
+          "year": 2026,
+          "venue": "International Conference on Multimedia Retrieval",
+          "doi": "https://doi.org/10.1145/3805622.3810644",
+          "bm25_score": -5.980253853061865
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W4415152171",
+          "title": "A Survey of Multimodal Retrieval-Augmented Generation",
+          "year": 2025,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2504.08748",
+          "bm25_score": -5.940368470068418
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W4406524208",
+          "title": "Evaluating RAG Pipeline in Multimodal LLM-based Question Answering Systems",
+          "year": 2024,
+          "venue": "International Conference on Automation, Computing and Renewable Systems (ICACRS)",
+          "doi": "https://doi.org/10.1109/icacrs62842.2024.10841620",
+          "bm25_score": -5.93711902557171
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W7162894282",
+          "title": "Uncertainty Quantification for Multimodal Retrieval Augmented Generation",
+          "year": 2026,
+          "venue": "arXiv (Cornell University)",
+          "doi": null,
+          "bm25_score": -5.851369843666277
+        },
+        {
+          "rank": 5,
+          "paper_id": "https://openalex.org/W7168296606",
+          "title": "Uncertainty Quantification for Multimodal Retrieval Augmented Generation",
+          "year": 2026,
+          "venue": "ACM SIGIR International Conference on Theory of Information Retrieval (ICTIR)",
+          "doi": "https://doi.org/10.1145/3805713.3820431",
+          "bm25_score": -5.851369843666277
+        },
+        {
+          "rank": 6,
+          "paper_id": "https://openalex.org/W7162753414",
+          "title": "Uncertainty Quantification for Multimodal Retrieval Augmented Generation",
+          "year": 2026,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2605.29956",
+          "bm25_score": -5.851369843666277
+        },
+        {
+          "rank": 7,
+          "paper_id": "https://openalex.org/W4309953147",
+          "title": "Retrieval-Augmented Multimodal Language Modeling",
+          "year": 2022,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2211.12561",
+          "bm25_score": -5.816708295806288
+        },
+        {
+          "rank": 8,
+          "paper_id": "https://openalex.org/W4404341467",
+          "title": "Beyond Text: Optimizing RAG with Multimodal Inputs for Industrial Applications",
+          "year": 2024,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2410.21943",
+          "bm25_score": -5.816707496833624
+        },
+        {
+          "rank": 9,
+          "paper_id": "https://openalex.org/W4403573894",
+          "title": "Self-adaptive Multimodal Retrieval-Augmented Generation",
+          "year": 2024,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2410.11321",
+          "bm25_score": -5.692457568747265
+        },
+        {
+          "rank": 10,
+          "paper_id": "https://openalex.org/W4409047487",
+          "title": "Multimodal Retrieval-Augmented Generation",
+          "year": 2024,
+          "venue": null,
+          "doi": "https://doi.org/10.31979/etd.f6u8-pjhf",
+          "bm25_score": -5.578394148941046
+        }
+      ]
+    },
+    {
+      "query_id": "q08",
+      "query": "multimodal RAG",
+      "intent": "查找多模态 RAG 研究",
+      "theme": "多模态 RAG",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W7164805720",
+          "title": "MMG-RAG: Multimodal Graph RAG for Medical Report Generation",
+          "year": 2026,
+          "venue": "International Conference on Multimedia Retrieval",
+          "doi": "https://doi.org/10.1145/3805622.3810644",
+          "bm25_score": -5.980251724976409
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W4415152171",
+          "title": "A Survey of Multimodal Retrieval-Augmented Generation",
+          "year": 2025,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2504.08748",
+          "bm25_score": -5.940364791625464
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W4406524208",
+          "title": "Evaluating RAG Pipeline in Multimodal LLM-based Question Answering Systems",
+          "year": 2024,
+          "venue": "International Conference on Automation, Computing and Renewable Systems (ICACRS)",
+          "doi": "https://doi.org/10.1109/icacrs62842.2024.10841620",
+          "bm25_score": -5.937117546852543
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W7162894282",
+          "title": "Uncertainty Quantification for Multimodal Retrieval Augmented Generation",
+          "year": 2026,
+          "venue": "arXiv (Cornell University)",
+          "doi": null,
+          "bm25_score": -5.851367088238879
+        },
+        {
+          "rank": 5,
+          "paper_id": "https://openalex.org/W7168296606",
+          "title": "Uncertainty Quantification for Multimodal Retrieval Augmented Generation",
+          "year": 2026,
+          "venue": "ACM SIGIR International Conference on Theory of Information Retrieval (ICTIR)",
+          "doi": "https://doi.org/10.1145/3805713.3820431",
+          "bm25_score": -5.851367088238879
+        },
+        {
+          "rank": 6,
+          "paper_id": "https://openalex.org/W7162753414",
+          "title": "Uncertainty Quantification for Multimodal Retrieval Augmented Generation",
+          "year": 2026,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2605.29956",
+          "bm25_score": -5.851367088238879
+        },
+        {
+          "rank": 7,
+          "paper_id": "https://openalex.org/W4404341467",
+          "title": "Beyond Text: Optimizing RAG with Multimodal Inputs for Industrial Applications",
+          "year": 2024,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2410.21943",
+          "bm25_score": -5.816705611085686
+        },
+        {
+          "rank": 8,
+          "paper_id": "https://openalex.org/W4403573894",
+          "title": "Self-adaptive Multimodal Retrieval-Augmented Generation",
+          "year": 2024,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2410.11321",
+          "bm25_score": -5.692454559136416
+        },
+        {
+          "rank": 9,
+          "paper_id": "https://openalex.org/W4409047487",
+          "title": "Multimodal Retrieval-Augmented Generation",
+          "year": 2024,
+          "venue": null,
+          "doi": "https://doi.org/10.31979/etd.f6u8-pjhf",
+          "bm25_score": -5.578391000190381
+        },
+        {
+          "rank": 10,
+          "paper_id": "https://openalex.org/W7223041946",
+          "title": "VisR-RAG-Fin: Benchmarking Multimodal RAG over Visually Rich Financial Documents",
+          "year": 2026,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2610.24822",
+          "bm25_score": -5.4573034600608334
+        }
+      ]
+    },
+    {
+      "query_id": "q09",
+      "query": "hallucination in retrieval-augmented generation",
+      "intent": "查找 RAG 幻觉问题研究",
+      "theme": "幻觉问题",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W4390528749",
+          "title": "RAGTruth: A Hallucination Corpus for Developing Trustworthy Retrieval-Augmented Language Models",
+          "year": 2023,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2401.00396",
+          "bm25_score": -5.10875051492274
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W4412945185",
+          "title": "Removal of Hallucination on Hallucination: Debate-Augmented RAG",
+          "year": 2025,
+          "venue": "Annual Meeting of the Association for Computational Linguistics (ACL)",
+          "doi": "https://doi.org/10.18653/v1/2025.acl-long.770",
+          "bm25_score": -4.8659479552256855
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W4395693361",
+          "title": "In-Context Learning for Scalable and Online Hallucination Detection in RAGS",
+          "year": 2024,
+          "venue": null,
+          "doi": "https://doi.org/10.5121/csit.2024.140703",
+          "bm25_score": -4.537963878890073
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W7166036265",
+          "title": "RusHallu-RAG: benchmarking hallucination detection for Russian RAG",
+          "year": 2026,
+          "venue": "Computational Linguistics and Intellectual Technologies",
+          "doi": "https://doi.org/10.29003/2075-7182-2026-24-516-534",
+          "bm25_score": -4.498217525149727
+        },
+        {
+          "rank": 5,
+          "paper_id": "https://openalex.org/W4416017646",
+          "title": "Where Does Legal AI Fail? Evaluating RAG Pipelines",
+          "year": 2025,
+          "venue": "ACM International Conference on Information and Knowledge Management (CIKM)",
+          "doi": "https://doi.org/10.1145/3746252.3761151",
+          "bm25_score": -4.08209792541397
+        },
+        {
+          "rank": 6,
+          "paper_id": "https://openalex.org/W4401042735",
+          "title": "Reducing hallucination in structured outputs via Retrieval-Augmented Generation",
+          "year": 2024,
+          "venue": "Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)",
+          "doi": "https://doi.org/10.18653/v1/2024.naacl-industry.19",
+          "bm25_score": -4.073554353035837
+        },
+        {
+          "rank": 7,
+          "paper_id": "https://openalex.org/W4416010344",
+          "title": "Two-Step RAG for Metadata Filtering and Statistical LLM Evaluation",
+          "year": 2025,
+          "venue": "IEEE Latin America Transactions",
+          "doi": "https://doi.org/10.1109/tla.2025.11231222",
+          "bm25_score": -3.572903474633318
+        },
+        {
+          "rank": 8,
+          "paper_id": "https://openalex.org/W4403679005",
+          "title": "SFR-RAG: Towards Contextually Faithful LLMs",
+          "year": 2024,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2409.09916",
+          "bm25_score": -3.5018490856404023
+        },
+        {
+          "rank": 9,
+          "paper_id": "https://openalex.org/W7154933272",
+          "title": "Retrieval augmented generation for security operations",
+          "year": 2026,
+          "venue": "DR-NTU (Nanyang Technological University)",
+          "doi": null,
+          "bm25_score": -3.4960563456426184
+        },
+        {
+          "rank": 10,
+          "paper_id": "https://openalex.org/W7125586192",
+          "title": "ScenarioBench: Trace-Grounded Compliance Evaluation for Text-to-SQL and RAG",
+          "year": 2025,
+          "venue": "IEEE International Conference on Collaborative Advances in Software and Computing (CASCON)",
+          "doi": "https://doi.org/10.1109/cascon66301.2025.00111",
+          "bm25_score": -3.478787427047499
+        }
+      ]
+    },
+    {
+      "query_id": "q10",
+      "query": "mitigating hallucination in RAG",
+      "intent": "查找缓解 RAG 幻觉的方法",
+      "theme": "幻觉问题",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W4412945185",
+          "title": "Removal of Hallucination on Hallucination: Debate-Augmented RAG",
+          "year": 2025,
+          "venue": "Annual Meeting of the Association for Computational Linguistics (ACL)",
+          "doi": "https://doi.org/10.18653/v1/2025.acl-long.770",
+          "bm25_score": -8.81747128472017
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W7154933272",
+          "title": "Retrieval augmented generation for security operations",
+          "year": 2026,
+          "venue": "DR-NTU (Nanyang Technological University)",
+          "doi": null,
+          "bm25_score": -6.736351412161341
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W4416379250",
+          "title": "Graph Retrieval-Augmented Generation: A Survey",
+          "year": 2025,
+          "venue": "ACM Transactions on Information Systems",
+          "doi": "https://doi.org/10.1145/3777378",
+          "bm25_score": -5.910113825060682
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W4410362031",
+          "title": "Retrieval-augmented generation for educational application: A systematic survey",
+          "year": 2025,
+          "venue": "Computers and Education Artificial Intelligence",
+          "doi": "https://doi.org/10.1016/j.caeai.2025.100417",
+          "bm25_score": -5.853875761017822
+        },
+        {
+          "rank": 5,
+          "paper_id": "https://openalex.org/W4393147129",
+          "title": "Benchmarking Large Language Models in Retrieval-Augmented Generation",
+          "year": 2024,
+          "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+          "doi": "https://doi.org/10.1609/aaai.v38i16.29728",
+          "bm25_score": -5.691404253612828
+        },
+        {
+          "rank": 6,
+          "paper_id": "https://openalex.org/W4415662252",
+          "title": "Evaluating Precision and Recall at Retrieval Time in Retrieval-Augmented Generation (RAG) Systems",
+          "year": 2025,
+          "venue": "American Journal of Computer Science and Technology",
+          "doi": "https://doi.org/10.11648/j.ajcst.20250804.11",
+          "bm25_score": -5.463930624460299
+        }
+      ]
+    },
+    {
+      "query_id": "q11",
+      "query": "retrieval-augmented language model 2021",
+      "intent": "查找早期检索增强语言模型",
+      "theme": "早期研究",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W3186138538",
+          "title": "Internet-Augmented Dialogue Generation",
+          "year": 2022,
+          "venue": "Annual Meeting of the Association for Computational Linguistics (ACL)",
+          "doi": "https://doi.org/10.18653/v1/2022.acl-long.579",
+          "bm25_score": -4.641827396517007
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W4392911072",
+          "title": "A RAG Chatbot for Precision Medicine of Multiple Myeloma",
+          "year": 2024,
+          "venue": "medRxiv",
+          "doi": "https://doi.org/10.1101/2024.03.14.24304293",
+          "bm25_score": -3.314442070038479
+        }
+      ]
+    },
+    {
+      "query_id": "q12",
+      "query": "REALM retrieval augmented language model",
+      "intent": "查找 REALM 等早期工作",
+      "theme": "早期研究",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W4366562915",
+          "title": "BRENT: Bidirectional Retrieval Enhanced Norwegian Transformer",
+          "year": 2023,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2304.09649",
+          "bm25_score": -6.461485355944164
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W4405974421",
+          "title": "Leveraging LLM and RAG for Automated Answer Script Evaluation",
+          "year": 2024,
+          "venue": "International Conference on Computation System and Information Technology for Sustainable Solutions (CSITSS)",
+          "doi": "https://doi.org/10.1109/csitss64042.2024.10817016",
+          "bm25_score": -5.968133432800769
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W4385573236",
+          "title": "MuRAG: Multimodal Retrieval-Augmented Generator for Open Question Answering over Images and Text",
+          "year": 2022,
+          "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+          "doi": "https://doi.org/10.18653/v1/2022.emnlp-main.375",
+          "bm25_score": -5.451373627892433
+        }
+      ]
+    },
+    {
+      "query_id": "q13",
+      "query": "RAG for knowledge-intensive NLP",
+      "intent": "查找面向知识密集 NLP 的 RAG",
+      "theme": "基础 RAG",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W4412887679",
+          "title": "CausalRAG: Integrating Causal Graphs into Retrieval-Augmented Generation",
+          "year": 2025,
+          "venue": "Findings of the Association for Computational Linguistics: ACL (Findings of ACL)",
+          "doi": "https://doi.org/10.18653/v1/2025.findings-acl.1165",
+          "bm25_score": -5.692727893761437
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W7170089727",
+          "title": "ragR: Retrieval-Augmented Generation and RAG Evaluation Tools in R",
+          "year": 2026,
+          "venue": null,
+          "doi": "https://doi.org/10.32614/cran.package.ragr",
+          "bm25_score": -5.482222610398822
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W4414787176",
+          "title": "Causal-Counterfactual RAG: The Integration of Causal-Counterfactual Reasoning into RAG",
+          "year": 2025,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2509.14435",
+          "bm25_score": -5.203470164601382
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W4416034993",
+          "title": "Federated Retrieval-Augmented Generation: A Systematic Mapping Study",
+          "year": 2025,
+          "venue": "Findings of the Association for Computational Linguistics: EMNLP (Findings of EMNLP)",
+          "doi": "https://doi.org/10.18653/v1/2025.findings-emnlp.388",
+          "bm25_score": -5.1791037567396465
+        },
+        {
+          "rank": 5,
+          "paper_id": "https://openalex.org/W4412376862",
+          "title": "Dynamic and Parametric Retrieval-Augmented Generation",
+          "year": 2025,
+          "venue": "International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)",
+          "doi": "https://doi.org/10.1145/3726302.3731692",
+          "bm25_score": -5.157936117494933
+        },
+        {
+          "rank": 6,
+          "paper_id": "https://openalex.org/W4402018589",
+          "title": "Optimizing RAG with Hybrid Search and Contextual Chunking",
+          "year": 2023,
+          "venue": "Journal of Engineering and Applied Sciences Technology",
+          "doi": "https://doi.org/10.47363/jeast/2023(5)e114",
+          "bm25_score": -5.075247956125478
+        },
+        {
+          "rank": 7,
+          "paper_id": "https://openalex.org/W4416075695",
+          "title": "Retrieval-Augmented Generation",
+          "year": 2025,
+          "venue": null,
+          "doi": "https://doi.org/10.31224/5781",
+          "bm25_score": -5.005934246313127
+        },
+        {
+          "rank": 8,
+          "paper_id": "https://openalex.org/W7106791207",
+          "title": "GRADE: Generating multi-hop QA and fine-gRAined Difficulty matrix for RAG Evaluation",
+          "year": 2025,
+          "venue": "Underline Science Inc.",
+          "doi": "https://doi.org/10.48448/7zah-me62",
+          "bm25_score": -4.827419128148428
+        },
+        {
+          "rank": 9,
+          "paper_id": "https://openalex.org/W4411922903",
+          "title": "Retrieval-Augmented Generation (RAG): Advances and Challenges",
+          "year": 2025,
+          "venue": "Problems of Engineering Cybernetics and Robotics",
+          "doi": "https://doi.org/10.7546/pecr.83.25.03",
+          "bm25_score": -4.761754217029334
+        }
+      ]
+    },
+    {
+      "query_id": "q14",
+      "query": "knowledge-intensive NLP retrieval",
+      "intent": "查找知识密集 NLP 的检索方法",
+      "theme": "检索方法",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W4287891177",
+          "title": "Retrieval-augmented Generation across Heterogeneous Knowledge",
+          "year": 2022,
+          "venue": "Conference of the North American Chapter of the Association for Computational Linguistics: Student Research Workshop (NAACL SRW)",
+          "doi": "https://doi.org/10.18653/v1/2022.naacl-srw.7",
+          "bm25_score": -7.079908950386744
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W4225992558",
+          "title": "Evidentiality-guided Generation for Knowledge-Intensive NLP Tasks",
+          "year": 2022,
+          "venue": "Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)",
+          "doi": "https://doi.org/10.18653/v1/2022.naacl-main.162",
+          "bm25_score": -6.7259527484646595
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W4385573439",
+          "title": "Enhancing Multilingual Language Model with Massive Multilingual Knowledge Triples",
+          "year": 2022,
+          "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+          "doi": "https://doi.org/10.18653/v1/2022.emnlp-main.462",
+          "bm25_score": -6.251037655719721
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W4385573010",
+          "title": "An Efficient Memory-Augmented Transformer for Knowledge-Intensive NLP Tasks",
+          "year": 2022,
+          "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+          "doi": "https://doi.org/10.18653/v1/2022.emnlp-main.346",
+          "bm25_score": -5.905929995433607
+        },
+        {
+          "rank": 5,
+          "paper_id": "https://openalex.org/W4412887679",
+          "title": "CausalRAG: Integrating Causal Graphs into Retrieval-Augmented Generation",
+          "year": 2025,
+          "venue": "Findings of the Association for Computational Linguistics: ACL (Findings of ACL)",
+          "doi": "https://doi.org/10.18653/v1/2025.findings-acl.1165",
+          "bm25_score": -5.692726952870385
+        },
+        {
+          "rank": 6,
+          "paper_id": "https://openalex.org/W4313304293",
+          "title": "Demonstrate-Search-Predict: Composing retrieval and language models for knowledge-intensive NLP",
+          "year": 2022,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2212.14024",
+          "bm25_score": -5.683486491290572
+        },
+        {
+          "rank": 7,
+          "paper_id": "https://openalex.org/W7170089727",
+          "title": "ragR: Retrieval-Augmented Generation and RAG Evaluation Tools in R",
+          "year": 2026,
+          "venue": null,
+          "doi": "https://doi.org/10.32614/cran.package.ragr",
+          "bm25_score": -5.482221303060931
+        },
+        {
+          "rank": 8,
+          "paper_id": "https://openalex.org/W4302305884",
+          "title": "Recitation-Augmented Language Models",
+          "year": 2022,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2210.01296",
+          "bm25_score": -5.3713497093800635
+        },
+        {
+          "rank": 9,
+          "paper_id": "https://openalex.org/W4387322926",
+          "title": "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models",
+          "year": 2023,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2310.01329",
+          "bm25_score": -5.3605162127220085
+        },
+        {
+          "rank": 10,
+          "paper_id": "https://openalex.org/W4285276310",
+          "title": "Knowledge Base Index Compression via Dimensionality and Precision Reduction",
+          "year": 2022,
+          "venue": null,
+          "doi": "https://doi.org/10.18653/v1/2022.spanlp-1.5",
+          "bm25_score": -5.341838912043787
+        }
+      ]
+    },
+    {
+      "query_id": "q15",
+      "query": "RAG for question answering",
+      "intent": "查找 RAG 用于问答系统",
+      "theme": "基础 RAG",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W7204220362",
+          "title": "Engineering Code Question-Answering Dataset for Agentic-RAG Evaluation",
+          "year": 2026,
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+          "doi": "https://doi.org/10.5281/zenodo.22104207",
+          "bm25_score": -5.263068630991292
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W3175741480",
+          "title": "Fine-tune the Entire RAG Architecture (including DPR retriever) for Question-Answering",
+          "year": 2021,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2106.11517",
+          "bm25_score": -5.1442711578632405
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W4399932275",
+          "title": "CBR-RAG: Case-Based Reasoning for Retrieval Augmented Generation in LLMs for Legal Question Answering",
+          "year": 2024,
+          "venue": "Lecture notes in computer science",
+          "doi": "https://doi.org/10.1007/978-3-031-63646-2_29",
+          "bm25_score": -5.130029669196195
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W4402646625",
+          "title": "Automatic Question Answering for the Linguistic Domain – An Evaluation of LLM Knowledge Base Extension with RAG",
+          "year": 2024,
+          "venue": "Lecture notes in computer science",
+          "doi": "https://doi.org/10.1007/978-3-031-70242-6_16",
+          "bm25_score": -5.108507372077283
+        },
+        {
+          "rank": 5,
+          "paper_id": "https://openalex.org/W4410295740",
+          "title": "Application and evaluation of RAG technology in civil aviation policy question answering",
+          "year": 2024,
+          "venue": "International Conference on Computer Network Technology and Electronic and Information Engineering (CNTEIE)",
+          "doi": "https://doi.org/10.1109/cnteie66268.2024.00032",
+          "bm25_score": -5.102847990392805
+        },
+        {
+          "rank": 6,
+          "paper_id": "https://openalex.org/W4396823873",
+          "title": "Retrieval-Augmented Generation with Knowledge Graphs for Customer Service Question Answering",
+          "year": 2024,
+          "venue": "International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)",
+          "doi": "https://doi.org/10.1145/3626772.3661370",
+          "bm25_score": -4.886588574345492
+        },
+        {
+          "rank": 7,
+          "paper_id": "https://openalex.org/W4415799040",
+          "title": "CRAG - Comprehensive RAG Benchmark",
+          "year": 2024,
+          "venue": "neural information processing systems",
+          "doi": "https://doi.org/10.52202/079017-0335",
+          "bm25_score": -4.8005004158934375
+        },
+        {
+          "rank": 8,
+          "paper_id": "https://openalex.org/W7222990367",
+          "title": "Comparative Evaluation of RAG and GraphRAG for Open-Ended Question Answering",
+          "year": 2026,
+          "venue": "Ulster University Research Portal (Ulster University)",
+          "doi": null,
+          "bm25_score": -4.784839743959656
+        },
+        {
+          "rank": 9,
+          "paper_id": "https://openalex.org/W4403585726",
+          "title": "RAG based Question-Answering for Contextual Response Prediction System",
+          "year": 2024,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2409.03708",
+          "bm25_score": -4.753707087711879
+        },
+        {
+          "rank": 10,
+          "paper_id": "https://openalex.org/W4406301819",
+          "title": "BioRAG: A RAG-LLM Framework for Biological Question Reasoning",
+          "year": 2024,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2408.01107",
+          "bm25_score": -4.746814403048626
+        }
+      ]
+    },
+    {
+      "query_id": "q16",
+      "query": "RAG system architecture",
+      "intent": "查找 RAG 系统架构设计",
+      "theme": "基础 RAG",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W7117990638",
+          "title": "Building a Retrieval-Augmented Generation (RAG) Application",
+          "year": 2025,
+          "venue": "Apress eBooks",
+          "doi": "https://doi.org/10.1007/979-8-8688-1808-0_3",
+          "bm25_score": -5.516504964461658
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W4407984868",
+          "title": "Streamlining Evaluation of Agentic and RAG Systems in Geoscience GenAI: a Comprehensive Approach",
+          "year": 2025,
+          "venue": "EAGE Digitalization Conference & Exhibition",
+          "doi": "https://doi.org/10.3997/2214-4609.202539075",
+          "bm25_score": -5.147643564502335
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W7219973837",
+          "title": "Document Querying Using Retrieval-Augmented Generation",
+          "year": 2026,
+          "venue": "Digital Repository (National Repository of Grey Literature)",
+          "doi": null,
+          "bm25_score": -5.064368808781303
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W4408258650",
+          "title": "An Open-Source RAG Architecture for LLMs",
+          "year": 2024,
+          "venue": "IEEE Region 10 Conference (TENCON)",
+          "doi": "https://doi.org/10.1109/tencon61640.2024.10903064",
+          "bm25_score": -4.680654071009997
+        },
+        {
+          "rank": 5,
+          "paper_id": "https://openalex.org/W7165739936",
+          "title": "EduRAG — Dual RAG Educativo (D-RAG-E) v2.0.0",
+          "year": 2026,
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+          "doi": "https://doi.org/10.5281/zenodo.20827995",
+          "bm25_score": -4.521476469095495
+        },
+        {
+          "rank": 6,
+          "paper_id": "https://openalex.org/W7165797641",
+          "title": "EduRAG — Dual RAG Educativo (D-RAG-E) v2.0.0",
+          "year": 2026,
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+          "doi": "https://doi.org/10.5281/zenodo.20827996",
+          "bm25_score": -4.521476469095495
+        },
+        {
+          "rank": 7,
+          "paper_id": "https://openalex.org/W7130554610",
+          "title": "Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Evaluation",
+          "year": 2025,
+          "venue": "International Conference on Foundation and Large Language Models (FLLM)",
+          "doi": "https://doi.org/10.1109/fllm67465.2025.11391155",
+          "bm25_score": -4.377349913181638
+        },
+        {
+          "rank": 8,
+          "paper_id": "https://openalex.org/W7139033621",
+          "title": "Agent Trust Fabric: Graph-RAG Risk Reasoning for AI Agents, Wallets, and Marketing Campaigns",
+          "year": 2023,
+          "venue": "American Journal of AI Cyber Computing Management",
+          "doi": "https://doi.org/10.64751/ajaccm.2023.v3.n1.pp29-37",
+          "bm25_score": -4.269297201694825
+        },
+        {
+          "rank": 9,
+          "paper_id": "https://openalex.org/W7221683310",
+          "title": "Retrieval-Augmented Generation for Enterprise Knowledge Management",
+          "year": 2026,
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+          "doi": "https://doi.org/10.5281/zenodo.23341612",
+          "bm25_score": -4.253432909230606
+        },
+        {
+          "rank": 10,
+          "paper_id": "https://openalex.org/W4411379560",
+          "title": "Prospects of Retrieval Augmented Generation (RAG) for Academic Library Search and Retrieval",
+          "year": 2025,
+          "venue": "Information Technology and Libraries",
+          "doi": "https://doi.org/10.5860/ital.v44i2.17361",
+          "bm25_score": -4.245546232174949
+        }
+      ]
+    },
+    {
+      "query_id": "q17",
+      "query": "retrieval-augmented generation applications",
+      "intent": "查找 RAG 应用",
+      "theme": "基础 RAG",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W4403622688",
+          "title": "Creating a Taxonomy for Retrieval Augmented Generation Applications",
+          "year": 2024,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2408.02854",
+          "bm25_score": -3.250961463429221
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W7161237794",
+          "title": "Deepchecks: Evaluating Retrieval-Augmented Generation (RAG)",
+          "year": 2026,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2605.14488",
+          "bm25_score": -3.157796390522391
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W7220746290",
+          "title": "A Survey on Optimizing Retrieval Augmented Generation Applications",
+          "year": 2026,
+          "venue": "Lecture notes in electrical engineering",
+          "doi": "https://doi.org/10.1007/978-981-92-1243-9_14",
+          "bm25_score": -3.081815425958948
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W7167621486",
+          "title": "Practice: RAG Implementation",
+          "year": 2026,
+          "venue": null,
+          "doi": "https://doi.org/10.1002/9781394374717.ch04",
+          "bm25_score": -3.0683035455614704
+        },
+        {
+          "rank": 5,
+          "paper_id": "https://openalex.org/W4410362031",
+          "title": "Retrieval-augmented generation for educational application: A systematic survey",
+          "year": 2025,
+          "venue": "Computers and Education Artificial Intelligence",
+          "doi": "https://doi.org/10.1016/j.caeai.2025.100417",
+          "bm25_score": -3.042009564650874
+        },
+        {
+          "rank": 6,
+          "paper_id": "https://openalex.org/W4415964381",
+          "title": "Applications in LLM Models and RAG Method",
+          "year": 2025,
+          "venue": "Routledge eBooks",
+          "doi": "https://doi.org/10.1201/9781003515302-2",
+          "bm25_score": -3.037732803155401
+        },
+        {
+          "rank": 7,
+          "paper_id": "https://openalex.org/W7162642619",
+          "title": "RAGe: A Retrieval-Augmented Generation Evaluation Framework",
+          "year": 2026,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2605.27445",
+          "bm25_score": -3.0362483983164936
+        },
+        {
+          "rank": 8,
+          "paper_id": "https://openalex.org/W4415527776",
+          "title": "Performing Retrieval‐Augmented Generation on AWS",
+          "year": 2025,
+          "venue": null,
+          "doi": "https://doi.org/10.1002/9781394406708.ch6",
+          "bm25_score": -2.976835114262166
+        },
+        {
+          "rank": 9,
+          "paper_id": "https://openalex.org/W4415062100",
+          "title": "Real-Time Evaluation Models for RAG: Who Detects Hallucinations Best?",
+          "year": 2025,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2503.21157",
+          "bm25_score": -2.88937211368419
+        },
+        {
+          "rank": 10,
+          "paper_id": "https://openalex.org/W7130574252",
+          "title": "Exploring RAGs Applications in Healthcare",
+          "year": 2025,
+          "venue": "International Conference on Foundation and Large Language Models (FLLM)",
+          "doi": "https://doi.org/10.1109/fllm67465.2025.11391150",
+          "bm25_score": -2.888028397141891
+        }
+      ]
+    },
+    {
+      "query_id": "q18",
+      "query": "contextual retrieval for RAG",
+      "intent": "查找上下文检索与 RAG 结合",
+      "theme": "检索方法",
+      "results": [
+        {
+          "rank": 1,
+          "paper_id": "https://openalex.org/W4414787176",
+          "title": "Causal-Counterfactual RAG: The Integration of Causal-Counterfactual Reasoning into RAG",
+          "year": 2025,
+          "venue": "arXiv (Cornell University)",
+          "doi": "https://doi.org/10.48550/arxiv.2509.14435",
+          "bm25_score": -4.449396878282597
+        },
+        {
+          "rank": 2,
+          "paper_id": "https://openalex.org/W7162334059",
+          "title": "LLM-Augmented Conversational Intelligence for Customer Workflow Continuity",
+          "year": 2022,
+          "venue": "International Journal of Artificial Intelligence Data Science and Machine Learning",
+          "doi": "https://doi.org/10.63282/3050-9262.ijaidsml-v3i4p118",
+          "bm25_score": -4.417347408994779
+        },
+        {
+          "rank": 3,
+          "paper_id": "https://openalex.org/W4412887679",
+          "title": "CausalRAG: Integrating Causal Graphs into Retrieval-Augmented Generation",
+          "year": 2025,
+          "venue": "Findings of the Association for Computational Linguistics: ACL (Findings of ACL)",
+          "doi": "https://doi.org/10.18653/v1/2025.findings-acl.1165",
+          "bm25_score": -4.181636988618756
+        },
+        {
+          "rank": 4,
+          "paper_id": "https://openalex.org/W7164495097",
+          "title": "Development and Multireader Evaluation of Radiological RAG-System",
+          "year": 2026,
+          "venue": "Data",
+          "doi": "https://doi.org/10.3390/data11060143",
+          "bm25_score": -4.1349740504584735
+        },
+        {
+          "rank": 5,
+          "paper_id": "https://openalex.org/W4403899386",
+          "title": "Maximizing RAG efficiency: A comparative analysis of RAG methods",
+          "year": 2024,
+          "venue": "Natural language processing.",
+          "doi": "https://doi.org/10.1017/nlp.2024.53",
+          "bm25_score": -4.103094574937503
+        },
+        {
+          "rank": 6,
+          "paper_id": "https://openalex.org/W4408258650",
+          "title": "An Open-Source RAG Architecture for LLMs",
+          "year": 2024,
+          "venue": "IEEE Region 10 Conference (TENCON)",
+          "doi": "https://doi.org/10.1109/tencon61640.2024.10903064",
+          "bm25_score": -3.968911683969135
+        },
+        {
+          "rank": 7,
+          "paper_id": "https://openalex.org/W7123345944",
+          "title": "A RAG-Based Evaluation of Large Language Models for Financial Insights",
+          "year": 2025,
+          "venue": "International Conference on Digital Innovations for Sustainable Solutions (ICDISS)",
+          "doi": "https://doi.org/10.1109/icdiss68238.2025.11320662",
+          "bm25_score": -3.8297513995840586
+        },
+        {
+          "rank": 8,
+          "paper_id": "https://openalex.org/W7171388658",
+          "title": "Hybrid Knowledge Graph and Large Language Model Architectures for Predictive Analytics",
+          "year": 2021,
+          "venue": "International Journal of Intelligent Automation & Robotics Engineering",
+          "doi": "https://doi.org/10.67228/30715725/ijiare-2021pi6t4p",
+          "bm25_score": -3.6263140471213022
+        },
+        {
+          "rank": 9,
+          "paper_id": "https://openalex.org/W7152478195",
+          "title": "RAGdeterm: Deterministic retrieval-augmented generation for code generation",
+          "year": 2026,
+          "venue": "SoftwareX",
+          "doi": "https://doi.org/10.1016/j.softx.2026.102636",
+          "bm25_score": -3.2667107807333324
+        },
+        {
+          "rank": 10,
+          "paper_id": "https://openalex.org/W7214435459",
+          "title": "Agentic Artificial Intelligence for Enterprise Data Governance and Decision Support Through Secure Retrieval Augmented Generation Across Microsoft 365 Information Environments",
+          "year": 2022,
+          "venue": "International Journal of Multidisciplinary Futuristic Development",
+          "doi": "https://doi.org/10.54660/ijmfd.2022.3.1.65-82",
+          "bm25_score": -3.2174060063971086
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "q01": {
+      "annotated": true,
+      "annotations_count": 10,
+      "matched_annotations": 10,
+      "judged_at_5": 5,
+      "judged_at_10": 10,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 0.8,
+      "precision_at_10_strict": 0.9,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 0
+    },
+    "q02": {
+      "annotated": true,
+      "annotations_count": 10,
+      "matched_annotations": 10,
+      "judged_at_5": 5,
+      "judged_at_10": 10,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 1.0,
+      "precision_at_10_strict": 1.0,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 9
+    },
+    "q03": {
+      "annotated": true,
+      "annotations_count": 10,
+      "matched_annotations": 10,
+      "judged_at_5": 5,
+      "judged_at_10": 10,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 0.4,
+      "precision_at_10_strict": 0.6,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 0
+    },
+    "q04": {
+      "annotated": true,
+      "annotations_count": 4,
+      "matched_annotations": 4,
+      "judged_at_5": 4,
+      "judged_at_10": 4,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 1.0,
+      "precision_at_10_strict": 1.0,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 0
+    },
+    "q05": {
+      "annotated": true,
+      "annotations_count": 10,
+      "matched_annotations": 10,
+      "judged_at_5": 5,
+      "judged_at_10": 10,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 1.0,
+      "precision_at_10_strict": 1.0,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 0
+    },
+    "q06": {
+      "annotated": true,
+      "annotations_count": 10,
+      "matched_annotations": 10,
+      "judged_at_5": 5,
+      "judged_at_10": 10,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 1.0,
+      "precision_at_10_strict": 1.0,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 0
+    },
+    "q07": {
+      "annotated": true,
+      "annotations_count": 10,
+      "matched_annotations": 10,
+      "judged_at_5": 5,
+      "judged_at_10": 10,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 1.0,
+      "precision_at_10_strict": 1.0,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 3
+    },
+    "q08": {
+      "annotated": true,
+      "annotations_count": 10,
+      "matched_annotations": 10,
+      "judged_at_5": 5,
+      "judged_at_10": 10,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 1.0,
+      "precision_at_10_strict": 1.0,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 2
+    },
+    "q09": {
+      "annotated": true,
+      "annotations_count": 10,
+      "matched_annotations": 10,
+      "judged_at_5": 5,
+      "judged_at_10": 10,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 1.0,
+      "precision_at_10_strict": 1.0,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 0
+    },
+    "q10": {
+      "annotated": true,
+      "annotations_count": 6,
+      "matched_annotations": 6,
+      "judged_at_5": 5,
+      "judged_at_10": 6,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 1.0,
+      "precision_at_10_strict": 1.0,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 0
+    },
+    "q11": {
+      "annotated": true,
+      "annotations_count": 2,
+      "matched_annotations": 2,
+      "judged_at_5": 2,
+      "judged_at_10": 2,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 1.0,
+      "precision_at_10_strict": 1.0,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 0
+    },
+    "q12": {
+      "annotated": true,
+      "annotations_count": 3,
+      "matched_annotations": 3,
+      "judged_at_5": 3,
+      "judged_at_10": 3,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 1.0,
+      "precision_at_10_strict": 1.0,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 0
+    },
+    "q13": {
+      "annotated": true,
+      "annotations_count": 9,
+      "matched_annotations": 9,
+      "judged_at_5": 5,
+      "judged_at_10": 9,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 1.0,
+      "precision_at_10_strict": 1.0,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 0
+    },
+    "q14": {
+      "annotated": true,
+      "annotations_count": 10,
+      "matched_annotations": 10,
+      "judged_at_5": 5,
+      "judged_at_10": 10,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 0.8,
+      "precision_at_10_strict": 0.8,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 0
+    },
+    "q15": {
+      "annotated": true,
+      "annotations_count": 10,
+      "matched_annotations": 10,
+      "judged_at_5": 5,
+      "judged_at_10": 10,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 1.0,
+      "precision_at_10_strict": 1.0,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 0
+    },
+    "q16": {
+      "annotated": true,
+      "annotations_count": 10,
+      "matched_annotations": 10,
+      "judged_at_5": 5,
+      "judged_at_10": 10,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 1.0,
+      "precision_at_10_strict": 1.0,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 1
+    },
+    "q17": {
+      "annotated": true,
+      "annotations_count": 10,
+      "matched_annotations": 10,
+      "judged_at_5": 5,
+      "judged_at_10": 10,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 1.0,
+      "precision_at_10_strict": 1.0,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 0
+    },
+    "q18": {
+      "annotated": true,
+      "annotations_count": 10,
+      "matched_annotations": 10,
+      "judged_at_5": 5,
+      "judged_at_10": 10,
+      "precision_at_5": 1.0,
+      "precision_at_10": 1.0,
+      "precision_at_5_strict": 0.8,
+      "precision_at_10_strict": 0.8,
+      "precision_at_5_loose": 1.0,
+      "precision_at_10_loose": 1.0,
+      "tie_groups": 0
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}{{ collection.name }} · Collection{% endblock %}
+{% block content %}
+<div class="collection-page">
+  <a class="back" href="{{ url_for('pages.collections_list') }}">← Collections</a>
+  <h1>{{ collection.name }}</h1>
+  <p class="small">{{ collection.description or 'no description' }}</p>
+
+  <div class="selection">
+    <button id="compare-btn" class="secondary">Compare selected (2–5)</button>
+    <a class="secondary" href="{{ url_for('pages.research_overview', collection_id=collection.id) }}">Research Overview</a>
+    <button id="export-cite-btn" class="secondary">Export citations</button>
+  </div>
+  <div id="compare-output" class="ai-output" aria-live="polite"></div>
+  <div id="export-output" class="ai-output" aria-live="polite"></div>
+
+  <ul class="results">
+    {% for paper in collection.papers %}
+    <li class="result">
+      <div class="rank"><input type="checkbox" class="select-paper" value="{{ paper.paper_id }}"></div>
+      <div class="body">
+        <a class="title" href="{{ url_for('pages.paper_detail', paper_id=paper.paper_id) }}">{{ paper.title or '(untitled)' }}</a>
+        <div class="meta">{{ paper.authors[:3]|join(', ') }} · {{ paper.year or 'n/a' }} · {{ paper.venue or 'unknown' }}</div>
+        <div class="small">Added {{ paper.added_at[:10] }} · {{ paper.reading_status|replace('_',' ')|title }}</div>
+        <div class="tags">
+          {% if paper.relevance_status in ['excluded','uncertain'] %}
+            <span class="tag warn">Screening {{ paper.relevance_status|status_label }}</span>
+          {% endif %}
+        </div>
+        <select class="reading-status" data-collection="{{ collection.id }}" data-paper-id="{{ paper.paper_id }}">
+          <option value="to_read" {% if paper.reading_status == 'to_read' %}selected{% endif %}>To Read</option>
+          <option value="reading" {% if paper.reading_status == 'reading' %}selected{% endif %}>Reading</option>
+          <option value="read" {% if paper.reading_status == 'read' %}selected{% endif %}>Read</option>
+        </select>
+        <button class="remove-paper" data-collection="{{ collection.id }}" data-paper-id="{{ paper.paper_id }}">Remove</button>
+      </div>
+    </li>
+    {% else %}
+    <li class="small">This collection is empty.</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

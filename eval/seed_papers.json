@@ -1,0 +1,38 @@
+[
+  {
+    "seed_id": "https://openalex.org/W4387156782",
+    "topic": "RAG evaluation",
+    "seed_title": "Ragas: Automated Evaluation of Retrieval Augmented Generation",
+    "annotations": {}
+  },
+  {
+    "seed_id": "https://openalex.org/W3168875417",
+    "topic": "retrieval methods",
+    "seed_title": "RocketQA: An Optimized Training Approach to Dense Passage Retrieval",
+    "annotations": {}
+  },
+  {
+    "seed_id": "https://openalex.org/W4309953147",
+    "topic": "multimodal RAG",
+    "seed_title": "Retrieval-Augmented Multimodal Language Modeling",
+    "annotations": {}
+  },
+  {
+    "seed_id": "https://openalex.org/W3155807546",
+    "topic": "hallucination / factuality",
+    "seed_title": "Retrieval Augmentation Reduces Hallucination in Conversation",
+    "annotations": {}
+  },
+  {
+    "seed_id": "https://openalex.org/W4389868615",
+    "topic": "RAG systems",
+    "seed_title": "Clinfo.ai: An Open-Source Retrieval-Augmented Large Language Model System",
+    "annotations": {}
+  },
+  {
+    "seed_id": "https://openalex.org/W7111223159",
+    "topic": "RAG / information retrieval crossover",
+    "seed_title": "Efficient Information Retrieval and Response Generation with Retrieval-Augmented Generation",
+    "annotations": {}
+  }
+]

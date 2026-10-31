@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Research Overview · RAG Research Explorer{% endblock %}
+{% block content %}
+<div class="overview-page">
+  <h1>Research Overview</h1>
+  <p class="subtitle">Synthesize a topic query or a collection of papers. Statistical summaries are computed locally; AI only interprets the provided evidence.</p>
+
+  <form class="search-bar compact" action="{{ url_for('pages.research_overview') }}" method="get">
+    <input type="text" name="q" value="{{ query }}" placeholder="Enter a research topic…">
+    <button type="submit">Load topic</button>
+  </form>
+
+  {% if source_papers %}
+    <p class="small note">Source: {{ source_label }} · {{ source_papers|length }} papers</p>
+    <div id="overview-context"
+         data-paper-ids='{{ source_papers|map(attribute="paper_id")|list|tojson }}'
+         data-paper-count="{{ source_papers|length }}"></div>
+    <button id="generate-overview" class="primary">Generate Research Overview</button>
+    <button id="clear-context" class="secondary" disabled>Clear context</button>
+    <div id="overview-output" class="ai-output" aria-live="polite"></div>
+
+    <div class="followup followup-card">
+      <h3>Ask a follow-up question</h3>
+      <input id="followup-question" type="text" placeholder="Ask a follow-up question…">
+      <button id="followup-btn" class="primary">Ask</button>
+      <span id="overview-status" class="small">Based on {{ source_papers|length }} papers.</span>
+    </div>
+    <div id="followup-output" class="ai-output" aria-live="polite"></div>
+  {% else %}
+    <p class="small note">Enter a topic to load papers for synthesis, or create a Reading Collection first.</p>
+  {% endif %}
+</div>
+{% endblock %}

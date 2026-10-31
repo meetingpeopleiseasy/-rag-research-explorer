@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Research Map · {{ paper.title or 'Paper' }}{% endblock %}
+{% block content %}
+<div class="map-page">
+  <a class="back" href="{{ url_for('pages.paper_detail', paper_id=paper.paper_id) }}">← Paper detail</a>
+  <h1>Research Map</h1>
+  <p class="subtitle">{{ paper.title or '(untitled)' }}</p>
+  <p id="map-note" class="small note"></p>
+  <div id="map-chart" class="map-chart"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<script>
+async function loadMap() {
+  const response = await fetch("/api/map/{{ paper.paper_id }}");
+  if (!response.ok) {
+    document.getElementById("map-chart").textContent = "Insufficient data for a research map.";
+    return;
+  }
+  const data = await response.json();
+  document.getElementById("map-note").textContent = data.note || "";
+  if (typeof echarts === "undefined") {
+    document.getElementById("map-chart").textContent = "ECharts failed to load.";
+    return;
+  }
+  const chart = echarts.init(document.getElementById("map-chart"));
+  const categories = [
+    { name: "paper", itemStyle: { color: "#1769e0" } },
+    { name: "topic", itemStyle: { color: "#38a96b" } },
+  ];
+  chart.setOption({
+    tooltip: {
+      formatter: function (params) {
+        if (params.dataType === "edge") {
+          return params.data.relation || "";
+        }
+        return params.data.name || "";
+      }
+    },
+    series: [{
+      type: "graph",
+      layout: "force",
+      data: data.nodes.map(node => ({
+        id: node.id,
+        name: node.name,
+        category: node.type === "topic" ? 1 : 0,
+        symbolSize: node.is_seed ? 28 : (node.type === "topic" ? 18 : 14)
+      })),
+      links: data.links,
+      categories: categories,
+      roam: true,
+      label: { show: true, fontSize: 11 },
+      edgeSymbol: ["none", "arrow"],
+      force: { repulsion: 120, edgeLength: [60, 140] }
+    }]
+  });
+}
+document.addEventListener("DOMContentLoaded", loadMap);
+</script>
+{% endblock %}
